@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontello/css/animation.css" type="text/css">
+    <link rel="stylesheet" href="fontello/css/fontello.css" type="text/css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <title>Sharp developers test assignment</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__burger">
+          <span></span>
+        </div>
+        <div class="header__search">
+          <button class="btn--mob">
+            <svg class="icon-search-mobile">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Credits</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Exchange</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Partners</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Stock</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Holding</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">About</a>
+          </li>
+        </ul>
+
+        <h1 class="header__mobile-heading">ParrotWings Exchange</h1>
+      </nav>
+    </header>
+    <main class="content">
+      <div class="content__wrapper">
+        <section class="content__products">
+          <div class="content__header">
+            <h1 class="content__heading content__heading--1">
+              ParrotWings Exchange
+            </h1>
+            <form class="content__form">
+              <input class="content__form-input" placeholder="Search..." type="search">
+              <button class="content__form-search">
+                <svg class="icon-search">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+          <h2 class="content__heading content__heading--2">Products</h2>
+          <div class="content__items">
+            <div class="content__item">
+              <img src="img/Clip.png" width="111" height="156" alt="Picture item 1" class="content__picture">
+              <p class="content__amount">2 props</p>
+              <h3 class="content__heading content__heading--3">
+                Unlimited exchange
+              </h3>
+              <button class="btn btn--order">Order</button>
+            </div>
+            <div class="content__item">
+              <img src="img/Clip-1.png" width="111" height="156" alt="Picture item 1" class="content__picture">
+              <p class="content__amount">1 prop</p>
+              <h3 class="content__heading content__heading--3">
+                International excha...
+              </h3>
+              <button class="btn btn--order">Order</button>
+            </div>
+            <div class="content__item">
+              <img src="img/Clip-2.png" width="111" height="156" alt="Picture item 1" class="content__picture">
+              <p class="content__amount">3 props, all</p>
+              <h3 class="content__heading content__heading--3">
+                Additional services
+              </h3>
+              <button class="btn btn--order">Order</button>
+            </div>
+            <div class="content__item">
+              <img src="img/Clip-3.png" width="111" height="156" alt="Picture item 1" class="content__picture">
+              <p class="content__amount">5 props</p>
+              <h3 class="content__heading content__heading--3">Support</h3>
+              <button class="btn btn--order">Order</button>
+            </div>
+            <div class="content__item">
+              <img src="img/Clip-4.png" width="111" height="156" alt="Picture item 1" class="content__picture">
+              <p class="content__amount">2 props</p>
+              <h3 class="content__heading content__heading--3">
+                Holiday works
+              </h3>
+              <div class="popup">
+                <h4 class="popup__heading">Popup header</h4>
+                <p class="popup__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore.
+                </p>
+              </div>
+              <button class="btn btn--order">Order</button>
+            </div>
+            <div class="content__item">
+              <img src="img/Clip-5.png" width="111" height="156" alt="Picture item 1" class="content__picture">
+              <p class="content__amount">not in access</p>
+              <h3 class="content__heading content__heading--3">
+                Postal delivery
+              </h3>
+              <button class="btn btn--order">Order</button>
+            </div>
+            <div class="content__item">
+              <img src="img/Clip-6.png" width="111" height="156" alt="Picture item 1" class="content__picture">
+              <p class="content__amount">2 props</p>
+              <h3 class="content__heading content__heading--3">
+                Document manag...
+              </h3>
+              <button class="btn btn--order">Order</button>
+            </div>
+            <div class="content__item">
+              <img src="img/Clip-7.png" width="111" height="156" alt="Picture item 1" class="content__picture">
+              <p class="content__amount">1 prop</p>
+              <h3 class="content__heading content__heading--3">Promotions</h3>
+              <button class="btn btn--order">Order</button>
+            </div>
+          </div>
+          <button class="content__more">More products...</button>
+        </section>
+        <section class="content__panels">
+          <div class="sign-up">
+            <h2 class="sign-up__heading">Sign up</h2>
+            <form action="#" class="sign-up__form" id="form">
+              <label class="visually-hidden" for="name">First Name</label>
+              <input class="sign-up__input" type="text" id="name" placeholder="First Name" required="">
+              <label class="visually-hidden" for="name">Last Name</label>
+              <input class="sign-up__input" type="text" id="name" placeholder="Last Name" required="">
+              <label class="visually-hidden" for="email">email</label>
+              <input class="sign-up__input" type="email" id="email" placeholder="E-mail" required="">
+              <p class="sign-up__info">
+                By creating a PW Exchange Account you acknowledge that you have
+                read, understood and agree to the
+                <a href="#" class="sign-up__link">Terms of Use</a> and
+                <a href="#" class="sign-up__link">Privacy Policy</a>.
+              </p>
+              <div class="sign-up__btn">
+                <input class="sign-up__button btn" type="submit" value="Sign Up">
+              </div>
+            </form>
+          </div>
+
+          <div class="monitor">
+            <h2 class="monitor__heading">Online Monitor</h2>
+            <div class="monitor__load">
+              <i class="icon-spin6 animate-spin"></i>
+              <p class="monitor__text">Loading...</p>
+            </div>
+
+            <div class="monitor__btn">
+              <input class="monitor__button btn" type="submit" value="Connect">
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper-header">
+        <div class="footer__header">
+          <div class="footer__socials">
+            <button class="footer__btn">
+              <svg class="icon-footer icon-evernote">
+                <use xlink:href="img/sprite.svg#evernote"></use>
+              </svg>
+            </button>
+            <button class="footer__btn">
+              <svg class="icon-footer icon-facebook">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </button>
+            <button class="footer__btn">
+              <svg class="icon-footer icon-pinterest">
+                <use xlink:href="img/sprite.svg#pinterest"></use>
+              </svg>
+            </button>
+            <button class="footer__btn">
+              <svg class="icon-footer icon-twitter">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
+            </button>
+            <button class="footer__btn">
+              <svg class="icon-footer icon-youtube">
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg>
+            </button>
+            <button class="footer__btn">
+              <svg class="icon-footer icon-github">
+                <use xlink:href="img/sprite.svg#github"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="footer__copyright">© Parrot Wings</div>
+        </div>
+      </div>
+
+      <div class="footer__wrapper">
+        <div class="footer__main">
+          <div class="footer__left">
+            <div class="footer__info">
+              <h2 class="footer__heading">Recruitment Info</h2>
+              <ul class="footer__links">
+                <li class="footer__link">Candidate First Name: Maria</li>
+                <li class="footer__link">Candidate Last Name: Rushkova</li>
+                <li class="footer__link">Spent Time: 14 hours</li>
+                <li class="footer__link">Email: maryrushkova@gmail.com</li>
+                <li class="footer__link">Test date: 11.02.2021</li>
+              </ul>
+            </div>
+            <div class="footer__resources">
+              <h2 class="footer__heading">Resources</h2>
+              <ul class="footer__links">
+                <li class="footer__link">
+                  Loader icon --- search on Fontello.com
+                </li>
+                <li class="footer__link">Icons --- Entypo</li>
+                <li class="footer__link">Fonts --- search in this file</li>
+                <li class="footer__link">
+                  Background --- standart situation: designer lose file
+                </li>
+              </ul>
+            </div>
+            <div class="footer__nav">
+              <h2 class="footer__heading">Navigation</h2>
+              <ul class="footer__links">
+                <li class="footer__link">Development</li>
+                <li class="footer__link">Application</li>
+                <li class="footer__link">Holding</li>
+                <li class="footer__link">Holding</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__right">
+            <div class="footer__browsers">
+              <img src="img/browser icons.png" alt="browsers icons" class="footer__img">
+            </div>
+            <div class="footer__stack">
+              Project should work on next stack:<br>
+              IE11, actual version of Firefox, Chrome<br>
+              on desktop and android, Opera (opera mini),<br>
+              Safari on mac and ios.
+            </div>
+            <div class="footer__copyright--mobile">© Parrot Wings</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding-top: 11.5rem;
+  background-color: #060605;
+  background-image: url(../img/header-img.png);
+  background-position: center -114px;
+  background-repeat: no-repeat;
+  z-index: 10;
+
+  @include respond(phone) {
+    background-position: center -160px;
+    padding-top: 0;
+  }
+
+  &__mobile-heading {
+    display: none;
+
+    @include respond(phone) {
+      display: inline-block;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 300;
+      font-size: 2.8rem;
+      color: $color-white;
+      margin: 0;
+    }
+  }
+
+  &__wrapper {
+    height: 6.4rem;
+    position: relative;
+    display: none;
+
+    @include respond(phone) {
+      display: block;
+    }
+  }
+
+  &__burger {
+    display: block;
+    top: 2.4rem;
+    left: 1.6rem;
+    width: 2.8rem;
+    height: 1.8rem;
+    background-color: transparent;
+    border: none;
+    z-index: 10;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+      content: ' ';
+      position: absolute;
+      background-color: $color-white;
+      width: 2.8rem;
+      height: 2px;
+      left: 1.6rem;
+      z-index: 10;
+    }
+
+    &:before {
+      top: 2.4rem;
+      z-index: 10;
+    }
+
+    &:after {
+      top: 4rem;
+      z-index: 10;
+    }
+  }
+
+  &__search {
+    position: absolute;
+    top: 2.2rem;
+    right: 1.2rem;
+  }
+}
+
+.header .header__burger span {
+  position: absolute;
+  background-color: $color-white;
+  width: 2.8rem;
+  height: 2px;
+  top: 3.2rem;
+  left: 1.6rem;
+  z-index: 10;
+}

@@ -1,0 +1,250 @@
+.content {
+  background-color: $color-black;
+  padding: 0 11.5rem;
+
+  @include respond(desktop) {
+    padding: 0 9rem;
+  }
+
+  @include respond(desktop-s) {
+    padding: 0 5rem;
+  }
+
+  @include respond(phone) {
+    padding: 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    max-width: 137rem;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #e9e9e9;
+    padding: 0 4.3rem 4.3rem;
+    box-sizing: border-box;
+
+    @include respond(desktop) {
+      padding: 0 4rem 4rem;
+    }
+
+    @include respond(desktop-s) {
+      flex-direction: column;
+      padding: 0 5rem 5rem;
+    }
+
+    @include respond(phone-m) {
+      padding: 0;
+    }
+  }
+
+  &__products {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-top: 4rem;
+
+    @include respond(desktop) {
+      margin-right: 1.5rem;
+    }
+
+    @include respond(desktop-s) {
+      margin-right: 0;
+    }
+
+    @include respond(phone) {
+      padding-top: 1.5rem;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-right: 2.6rem;
+  }
+
+  &__heading {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    margin: 0;
+
+    &--1 {
+      font-size: 3.4rem;
+      margin-bottom: 1.4rem;
+      margin-right: 2rem;
+
+      @include respond(desktop-s) {
+        font-size: 3rem;
+      }
+
+      @include respond(tab) {
+        font-size: 2.8rem;
+        margin-right: 1.5rem;
+      }
+
+      @include respond(phone) {
+        display: none;
+      }
+    }
+
+    &--2 {
+      font-size: 2.6rem;
+      position: relative;
+      margin-bottom: 2.6rem;
+
+      @include respond(phone) {
+        margin-bottom: 1.6rem;
+      }
+
+      @include respond(phone-m) {
+        margin-left: 4rem;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: -2.3rem;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #933435;
+        width: 1.9rem;
+        height: 0.8rem;
+      }
+    }
+
+    &--3 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+
+      @include respond(desktop) {
+        font-size: 1.6rem;
+      }
+
+      @include respond(phone-m) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 25.4rem;
+    height: 4rem;
+    padding: 1.3rem;
+    padding-bottom: 1.1rem;
+    margin: 2px;
+    border: 1px solid #e4e4e4;
+    outline: 1px solid $color-grey-light;
+    background-color: #eee;
+    box-sizing: border-box;
+
+    @include respond(desktop) {
+      width: 20rem;
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
+
+    &:hover {
+      outline: 1px solid $color-hover;
+    }
+
+    &-input {
+      font-size: 1.4rem;
+      border: none;
+      background-color: transparent;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &-search {
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include respond(tab) {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 12.7rem;
+    margin-bottom: 5.1rem;
+    margin-right: 1.6rem;
+    position: relative;
+
+    @include respond(desktop) {
+      max-width: 12rem;
+      margin-right: 1rem;
+    }
+
+    @include respond(tab) {
+      margin-right: 1.5rem;
+    }
+
+    @include respond(phone-m) {
+      max-width: 12.8rem;
+      margin-right: 0;
+      margin-bottom: 4.6rem;
+    }
+
+    &:nth-child(2n) {
+      @include respond(phone-s) {
+        margin-left: 2.6rem;
+      }
+    }
+  }
+
+  &__picture {
+    border-radius: 3px;
+    box-shadow: 0 0.1rem 0.5rem rgba($color-black, 0.34);
+  }
+
+  &__amount {
+    font-size: 1.1rem;
+    margin: 0;
+    margin-top: 0.9rem;
+  }
+
+  &__more {
+    align-self: center;
+    font-size: $default-font-size;
+    text-decoration: underline;
+    background-color: inherit;
+    color: #444;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__panels {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 33.8rem;
+    padding-top: 1.9rem;
+
+    @include respond(desktop) {
+      width: 30rem;
+    }
+
+    @include respond(desktop-s) {
+      flex-direction: row;
+      width: 100%;
+    }
+  }
+}

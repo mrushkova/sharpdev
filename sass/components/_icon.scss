@@ -1,0 +1,32 @@
+.icon-search {
+  width: 1.6rem;
+  height: 1.6rem;
+  fill: #a3a3a3;
+}
+
+.icon-search-mobile {
+  width: 2.1rem;
+  height: 2.1rem;
+  fill: $color-white;
+  background-color: transparent;
+}
+
+.icon-footer {
+  width: 4.7rem;
+  height: 4.9rem;
+  fill: #2b2b2d;
+
+  @include respond(desktop) {
+    width: 3.7rem;
+    height: 3.9rem;
+  }
+
+  @include respond(phone) {
+    width: 3.1rem;
+    height: 3.6rem;
+  }
+}
+
+.icon-footer:hover {
+  fill: $color-hover;
+}

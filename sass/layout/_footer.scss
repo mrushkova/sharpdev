@@ -1,0 +1,226 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #181818;
+  font-family: 'Oswald', sans-serif;
+
+  &__wrapper-header {
+    width: 100%;
+    background-color: #151515;
+    padding: 0;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 127.6rem;
+    padding: 0 15.2rem 0 16.2rem;
+    margin: 0 auto;
+
+    @include respond(desktop) {
+      padding: 0 10rem;
+    }
+
+    @include respond(phone) {
+      padding: 0 1.5rem;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    max-width: 71rem;
+    height: 4.7rem;
+    margin: 2.6rem 2rem 2.6rem 0;
+
+    @include respond(phone) {
+      margin: 3.5rem 0 2.6rem;
+    }
+  }
+
+  &__btn {
+    max-width: 4.9rem;
+    height: 4.7rem;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: transparent;
+    cursor: pointer;
+  }
+
+  &__copyright,
+  &__copyright--mobile {
+    justify-self: flex-end;
+    font-size: 2.8rem;
+    margin: 0;
+    color: #2b2b2d;
+
+    @include respond(desktop) {
+      font-size: 2rem;
+    }
+
+    @include respond(tab) {
+      font-size: 1.5rem;
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &__copyright--mobile {
+    display: none;
+    font-size: 2.8rem;
+    margin: 3.7rem 0;
+    color: #2b2b2d;
+
+    @include respond(phone) {
+      display: block;
+    }
+  }
+
+  &__wrapper {
+    padding: 0 16.2rem;
+
+    @include respond(desktop) {
+      padding: 0 10rem;
+    }
+
+    @include respond(desktop-s) {
+      padding: 0 5rem;
+    }
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 127.6rem;
+    margin: 0 auto;
+    margin-bottom: 2.7rem;
+    color: #bbb;
+
+    @include respond(tab) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__left {
+    display: flex;
+
+    @include respond(phone-m) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__heading {
+    font-size: 2.6rem;
+    color: #444444;
+    text-align: center;
+
+    @include respond(desktop-s) {
+      font-size: 2rem;
+    }
+
+    @include respond(phone-m) {
+      font-size: 2.6rem;
+    }
+  }
+
+  &__links {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  &__link {
+    font-size: $default-font-size;
+    margin-bottom: 0.9rem;
+
+    @include respond(desktop-s) {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    @include respond(phone-m) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__info {
+    margin-right: 10.5rem;
+
+    @include respond(desktop-s) {
+      margin-right: 4rem;
+    }
+
+    @include respond(phone-m) {
+      margin-right: 0;
+    }
+  }
+
+  &__resources {
+    max-width: 20.8rem;
+    margin-right: 7.8rem;
+
+    @include respond(desktop-s) {
+      margin-right: 4rem;
+    }
+    @include respond(phone-m) {
+      margin-right: 0;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    @include respond(tab) {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 3rem;
+    }
+
+    @include respond(phone-m) {
+      margin-top: 6.1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__browsers {
+    margin-bottom: 1.9rem;
+  }
+
+  &__img {
+    filter: brightness(0.5);
+  }
+
+  &__stack {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.4rem;
+    text-align: end;
+    color: #5c5c5c;
+
+    @include respond(desktop-s) {
+      font-size: 1rem;
+    }
+
+    @include respond(tab) {
+      margin-left: 2rem;
+    }
+
+    @include respond(phone-m) {
+      text-align: center;
+      margin-left: 0;
+      font-size: 1.4rem;
+    }
+  }
+}
