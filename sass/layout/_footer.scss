@@ -135,7 +135,11 @@
   &__links {
     list-style: none;
     padding: 0;
-    text-align: center;
+    text-align: left;
+
+    @include respond(phone) {
+      text-align: center;
+    }
   }
 
   &__link {
